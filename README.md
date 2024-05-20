@@ -1,4 +1,4 @@
-Our project offers a user-friendly platform with tailored features for three distinct 
+My project offers a user-friendly platform with tailored features for three distinct 
 roles: Students, Flat Owners and Recruiters.
 For Students:
 - Schedule Matching: Upload schedules and find peers with compatible timetables 
@@ -18,6 +18,6 @@ For Recruiters:
 facilitating efficient recruitment.
 - Streamlined Recruitment: Identify and engage with suitable candidates with ease 
 through the platform's intuitive interface.
-Overall, our project serves as a digital hub that fosters connections and facilitates 
+Overall, the project serves as a digital hub that fosters connections and facilitates 
 daily life in Dhaka, demonstrating the power of technology to bring people 
 together and enhance convenience.
