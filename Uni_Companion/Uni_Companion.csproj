@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01BACFCD-AC04-494B-A7EE-D41FC397A218}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Uni_Companion</RootNamespace>
+    <AssemblyName>Uni_Companion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Uni_Companion.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buy.designer.cs">
+      <DependentUpon>Buy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgetPass.Designer.cs">
+      <DependentUpon>forgetPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flat_upload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flat_upload.Designer.cs">
+      <DependentUpon>Flat_upload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editordelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editordelete.Designer.cs">
+      <DependentUpon>editordelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="profile.Designer.cs">
+      <DependentUpon>profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="recruiter_offer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recruiter_offer.Designer.cs">
+      <DependentUpon>recruiter_offer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rent.Designer.cs">
+      <DependentUpon>rent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="recruitment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recruitment.Designer.cs">
+      <DependentUpon>recruitment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="schedule_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="schedule_settings.designer.cs">
+      <DependentUpon>schedule_settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sell.designer.cs">
+      <DependentUpon>Sell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sign_In.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign_In.designer.cs">
+      <DependentUpon>Sign_In.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="startPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="startPage.Designer.cs">
+      <DependentUpon>startPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="student_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student_home.designer.cs">
+      <DependentUpon>student_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uni_CompanionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uni_CompanionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uni_CompanionDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uni_CompanionDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uni_CompanionDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uni_CompanionDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Uni_CompanionDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Uni_CompanionDataSet3.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy.resx">
+      <DependentUpon>Buy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flat_upload.resx">
+      <DependentUpon>Flat_upload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgetPass.resx">
+      <DependentUpon>forgetPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editordelete.resx">
+      <DependentUpon>editordelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profile.resx">
+      <DependentUpon>profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recruiter_offer.resx">
+      <DependentUpon>recruiter_offer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rent.resx">
+      <DependentUpon>rent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recruitment.resx">
+      <DependentUpon>recruitment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="schedule_settings.resx">
+      <DependentUpon>schedule_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sell.resx">
+      <DependentUpon>Sell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sign_In.resx">
+      <DependentUpon>Sign_In.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="startPage.resx">
+      <DependentUpon>startPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student_home.resx">
+      <DependentUpon>student_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\schedule_settings.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Uni_CompanionDataSet.xsc">
+      <DependentUpon>Uni_CompanionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Uni_CompanionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uni_CompanionDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uni_CompanionDataSet.xss">
+      <DependentUpon>Uni_CompanionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Uni_CompanionDataSet1.xsc">
+      <DependentUpon>Uni_CompanionDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Uni_CompanionDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uni_CompanionDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uni_CompanionDataSet1.xss">
+      <DependentUpon>Uni_CompanionDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Uni_CompanionDataSet2.xsc">
+      <DependentUpon>Uni_CompanionDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Uni_CompanionDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uni_CompanionDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uni_CompanionDataSet2.xss">
+      <DependentUpon>Uni_CompanionDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Uni_CompanionDataSet3.xsc">
+      <DependentUpon>Uni_CompanionDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Uni_CompanionDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Uni_CompanionDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Uni_CompanionDataSet3.xss">
+      <DependentUpon>Uni_CompanionDataSet3.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
