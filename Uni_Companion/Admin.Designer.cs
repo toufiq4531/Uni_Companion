@@ -33,7 +33,6 @@ namespace Uni_Companion
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Save_bt = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox_search = new System.Windows.Forms.TextBox();
@@ -49,11 +48,12 @@ namespace Uni_Companion
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.back_bt = new System.Windows.Forms.Button();
+            this.picSearch = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -79,7 +79,7 @@ namespace Uni_Companion
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.picSearch);
             this.panel1.Controls.Add(this.Save_bt);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.textBox_search);
@@ -92,17 +92,6 @@ namespace Uni_Companion
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(316, 182);
             this.panel1.TabIndex = 15;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Location = new System.Drawing.Point(268, 66);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 25);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // Save_bt
             // 
@@ -138,8 +127,8 @@ namespace Uni_Companion
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "E",
-            "D"});
+            "Valid",
+            "Disabled"});
             this.comboBox1.Location = new System.Drawing.Point(99, 105);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
@@ -275,6 +264,18 @@ namespace Uni_Companion
             this.back_bt.UseVisualStyleBackColor = true;
             this.back_bt.Click += new System.EventHandler(this.back_bt_Click);
             // 
+            // picSearch
+            // 
+            this.picSearch.BackColor = System.Drawing.Color.Transparent;
+            this.picSearch.Image = ((System.Drawing.Image)(resources.GetObject("picSearch.Image")));
+            this.picSearch.Location = new System.Drawing.Point(268, 57);
+            this.picSearch.Name = "picSearch";
+            this.picSearch.Size = new System.Drawing.Size(33, 38);
+            this.picSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSearch.TabIndex = 54;
+            this.picSearch.TabStop = false;
+            this.picSearch.Click += new System.EventHandler(this.picSearch_Click);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -298,9 +299,9 @@ namespace Uni_Companion
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSearch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,7 +312,6 @@ namespace Uni_Companion
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Save_bt;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox_search;
@@ -327,5 +327,6 @@ namespace Uni_Companion
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button back_bt;
+        private System.Windows.Forms.PictureBox picSearch;
     }
 }

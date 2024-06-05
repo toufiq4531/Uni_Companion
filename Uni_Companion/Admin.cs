@@ -107,71 +107,6 @@ namespace Uni_Companion
             Save_bt.Text = "Delete";
         }
 
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-            if (radioButton_student.Checked == true && textBox_search.Text != string.Empty)
-            {
-                try
-                {
-                    string query = "SELECT Student_id, Name, Email, Contact_num " +
-                            "FROM Student_info " +
-                            "WHERE Student_id = '" + textBox_search.Text + "' ";
-                    con.Open();
-                    SqlDataAdapter adapter = new SqlDataAdapter(query, con);
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
-                    dataGridView1.DataSource = dt;
-                    con.Close();
-                }
-                catch
-                {
-                    MessageBox.Show("Invalid ID", "Error");
-                }
-
-            }
-            else if (radioButton_recruiter.Checked == true && textBox_search.Text != string.Empty)
-            {
-                try
-                {
-                    string query = "SELECT Recruiter_id, Name, Email, Contact_num " +
-                            "FROM Recruiter_info  " +
-                            "WHERE Recruiter_id = '" + int.Parse(textBox_search.Text) + "' ";
-                    con.Open();
-                    SqlDataAdapter adapter = new SqlDataAdapter(query, con);
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
-                    dataGridView1.DataSource = dt;
-                    con.Close();
-                }
-                catch
-                {
-                    MessageBox.Show("Invalid ID", "Error");
-                }
-
-            }
-
-            else if (radioButton_owner.Checked == true && textBox_search.Text != string.Empty)
-            {
-                try
-                {
-                    string query = "SELECT Owner_id, Name, Email, Contact_num " +
-                            "FROM Owner_info  " +
-                            "WHERE Owner_id = '" + int.Parse(textBox_search.Text) + "' ";
-                    con.Open();
-                    SqlDataAdapter adapter = new SqlDataAdapter(query, con);
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
-                    dataGridView1.DataSource = dt;
-                    con.Close();
-                }
-                catch
-                {
-                    MessageBox.Show("Invalid ID", "Error");
-                }
-
-            }
-        }
-
         private void radioButton_edit_CheckedChanged_1(object sender, EventArgs e)
         {
             comboBox1.Enabled = true;
@@ -358,6 +293,71 @@ namespace Uni_Companion
             startPage sp = new startPage();
             this.Hide();
             sp.Show();
+        }
+
+        private void picSearch_Click(object sender, EventArgs e)
+        {
+            if (radioButton_student.Checked == true && textBox_search.Text != string.Empty)
+            {
+                try
+                {
+                    string query = "SELECT Student_id, Name, Email, Contact_num " +
+                            "FROM Student_info " +
+                            "WHERE Student_id = '" + textBox_search.Text + "' ";
+                    con.Open();
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dataGridView1.DataSource = dt;
+                    con.Close();
+                }
+                catch
+                {
+                    MessageBox.Show("Invalid ID", "Error");
+                }
+
+            }
+            else if (radioButton_recruiter.Checked == true && textBox_search.Text != string.Empty)
+            {
+                try
+                {
+                    string query = "SELECT Recruiter_id, Name, Email, Contact_num " +
+                            "FROM Recruiter_info  " +
+                            "WHERE Recruiter_id = '" + int.Parse(textBox_search.Text) + "' ";
+                    con.Open();
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dataGridView1.DataSource = dt;
+                    con.Close();
+                }
+                catch
+                {
+                    MessageBox.Show("Invalid ID", "Error");
+                }
+
+            }
+
+            else if (radioButton_owner.Checked == true && textBox_search.Text != string.Empty)
+            {
+                try
+                {
+                    string query = "SELECT Owner_id, Name, Email, Contact_num " +
+                            "FROM Owner_info  " +
+                            "WHERE Owner_id = '" + int.Parse(textBox_search.Text) + "' ";
+                    con.Open();
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    dataGridView1.DataSource = dt;
+                    con.Close();
+                }
+                catch
+                {
+                    MessageBox.Show("Invalid ID", "Error");
+                }
+
+            }
         }
     }
 }
