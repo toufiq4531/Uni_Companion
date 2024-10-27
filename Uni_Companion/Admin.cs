@@ -276,14 +276,14 @@ namespace Uni_Companion
                             }
                             else
                             {
-                                MessageBox.Show("Invalid id", "Error");
+                                MessageBox.Show("Invalid ID", "Error");
                             }
                         }
                     }
                 }
                 catch
                 {
-                    MessageBox.Show("Invalid ", "Error");
+                    MessageBox.Show("Invalid ID", "Error");
                 }
             }
         }
